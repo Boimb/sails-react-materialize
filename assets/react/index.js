@@ -1,18 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './style/style.scss'
-import Header from './components/header/header'
-import Main from './components/main/main'
-import Footer from './components/footer/footer'
+import App from './app'
 
-const App = () => {
+
+const Root = () => {
   return (
-    <div id='wrapper'>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
-};
+    <App />
+  )
+}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Root/>, document.getElementById('root'));
